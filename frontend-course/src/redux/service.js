@@ -6,7 +6,7 @@ import {
  } from './actions';
 var be_url = process.env.BE_LB;
 export const TOKEN = 'token';
-export const URL_SERVER = be_url;
+export const URL_SERVER = `http://${be_url}`;
 const URL_SERVER_API = `${URL_SERVER}/api`;
 
 const fetchApi = (url, method = 'GET', body = null) => {
