@@ -1,8 +1,9 @@
 const Sequelize = require('sequelize');
 const { constants } = require('./constants');
 
+var db_host = process.env.DB_HOST;
 const configDB = {
-  host: '$(DB_URL)',
+  host: db_host,
   dialect: 'mysql',
   port: 3306,
   protocol: null,

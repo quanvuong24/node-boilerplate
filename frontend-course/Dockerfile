@@ -5,7 +5,9 @@ WORKDIR /frontend
 
 COPY . .
 
-RUN yarn install
+RUN yarn install \
+&& apt update \
+&& apt install vim -y
 
 EXPOSE 3000
 

@@ -10,10 +10,10 @@
     "eslint": "eslint --ignore-path .gitignore --ignore-pattern internals/scripts",
     "lint:js": "npm run eslint -- . ",
     "lint": "npm run lint:js",
-    "seed": "cross-env NODE_ENV=development babel-node src/seeds/migrate.js",
+    "seed": "DB_HOST=$BOILERPLATE_DB_SERVICE_HOST cross-env NODE_ENV=development babel-node src/seeds/migrate.js",
     "dev": "cross-env NODE_ENV=development nodemon --exec babel-node src/index.js",
     "production": "cross-env NODE_ENV=production nodemon --exec babel-node src/index.js",
-    "start": "backpack dev",
+    "start": "DB_HOST=$BOILERPLATE_DB_SERVICE_HOST backpack dev",
     "postinstall": "backpack build",
     "build": "yarn postinstall && node scripts/build.js"
   },
