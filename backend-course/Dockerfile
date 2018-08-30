@@ -7,7 +7,7 @@ COPY . .
 
 RUN yarn install \
 && apt update \
-&& apt install vim -y
+&& apt install vim lsof -y
 
 EXPOSE 4500
 

@@ -4,9 +4,9 @@ import {
   fetch_register, fetch_register_error, fetch_register_success,
   is_authenticate, 
  } from './actions';
-
+var be_url = process.env.BE_URL;
 export const TOKEN = 'token';
-export const URL_SERVER = '$(BE_URL):$(PORT)';
+export const URL_SERVER = be_url;
 const URL_SERVER_API = `${URL_SERVER}/api`;
 
 const fetchApi = (url, method = 'GET', body = null) => {
