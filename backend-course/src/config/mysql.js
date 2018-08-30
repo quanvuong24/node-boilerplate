@@ -2,7 +2,7 @@ const Sequelize = require('sequelize');
 const { constants } = require('./constants');
 
 const configDB = {
-  host: '10.100.219.166',
+  host: '$(DB_URL)',
   dialect: 'mysql',
   port: 3306,
   protocol: null,
