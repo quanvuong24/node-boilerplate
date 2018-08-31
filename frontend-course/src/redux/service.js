@@ -4,10 +4,11 @@ import {
   fetch_register, fetch_register_error, fetch_register_success,
   is_authenticate, 
  } from './actions';
+require('../config/env');
 var be_url = process.env.BE_LB;
-export const be_pro = 'http://';
+export const be_proto = 'http://';
 export const TOKEN = 'token';
-export const URL_SERVER = `${be_pro}` + be_url;
+export const URL_SERVER = `${be_proto}` + be_url;
 const URL_SERVER_API = `${URL_SERVER}/api`;
 
 const fetchApi = (url, method = 'GET', body = null) => {
