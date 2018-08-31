@@ -4,8 +4,7 @@ import {
   fetch_register, fetch_register_error, fetch_register_success,
   is_authenticate, 
  } from './actions';
-require('./config/env');
-var be_url = process.env.BE_LB;
+var be_url = process.env.REACT_APP_BE_LB;
 export const be_proto = 'http://';
 export const TOKEN = 'token';
 export const URL_SERVER = `${be_proto}` + be_url;
