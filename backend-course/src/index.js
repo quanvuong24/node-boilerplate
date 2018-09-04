@@ -15,9 +15,10 @@ app.use(passport.initialize());
 /**
  * *Description: Setup Router Backend
  */
+var cont_name = process.env.HOSTNAME;
 app.use('/api', Routes);
 app.get('/', function(req, res) {
-  res.status(200).send("Welcome to our Boilerplate restful API!:)");
+  res.status(200).send("Welcome to our Boilerplate restful API!:)" + cont_name);
 });
 /**
  * *Description: Setup Router Frontend
