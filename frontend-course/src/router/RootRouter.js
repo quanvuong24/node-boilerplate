@@ -52,7 +52,7 @@ class RootRouter extends PureComponent {
           </Layout>
 
           <Footer className="footer" >
-            <p>Copyright © 2018. Made with ❤ by Chau Nguyen</p>
+            <p>Copyright © 2018. Made with ❤ by Wayne Wong</p>
           </Footer>  
         </Layout>
       </Router>  
